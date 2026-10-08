@@ -41,7 +41,7 @@ internal fun ExpandableDescription(
             .clickable(enabled = canExpand) { expanded = !expanded },
     ) {
         Text(
-            text = text,
+            text = text.trim(),
             style = style,
             color = color,
             maxLines = if (expanded) Int.MAX_VALUE else collapsedMaxLines,
